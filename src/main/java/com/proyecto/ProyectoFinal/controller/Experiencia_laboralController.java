@@ -2,6 +2,7 @@ package com.proyecto.ProyectoFinal.controller;
 
 import com.proyecto.ProyectoFinal.model.experiencia_laboral;
 import com.proyecto.ProyectoFinal.service.Iexperiencia_laboralService;
+import java.util.HashSet;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -50,10 +51,13 @@ public class Experiencia_laboralController {
     experiencia_laboral experi = experiServ.buscarexperiencia_laboral(id);
     
     experi.setNombre_empresa(exp.getNombre_empresa());
-    experi.setEs_trabajo_actual(Boolean.TRUE);
+    experi.setEs_trabajo_actual(exp.getEs_trabajo_actual());
     experi.setFechaInicio(exp.getFechaInicio());
     experi.setFecha_fin(exp.getFecha_fin());
     experi.setDescripcion(exp.getDescripcion());
+    experi.setTipo_empleo(exp.getTipo_empleo());
+        
+        
     
    experiServ.crearexperiencia_laboral(experi);
    
