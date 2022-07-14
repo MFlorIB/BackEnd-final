@@ -54,10 +54,8 @@ public class PersonaController {
         perso.setNombres(per.getNombres());
         perso.setApellidos(per.getApellidos());
         perso.setDomicilio(per.getDomicilio());
-        perso.setFecha_de_nac(per.getFecha_de_nac());
         perso.setTelefono(per.getTelefono());
         perso.setCorreo_electronico(per.getCorreo_electronico());
-        perso.setUrl_foto(per.getUrl_foto());
         
         persoServ.crearpersona(perso);
         

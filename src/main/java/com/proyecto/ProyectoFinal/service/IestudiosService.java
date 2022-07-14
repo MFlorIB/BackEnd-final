@@ -17,3 +17,4 @@ public interface IestudiosService {
     public List<estudios> verEstudiosPersona(Long idpersona);
     
 }
+
