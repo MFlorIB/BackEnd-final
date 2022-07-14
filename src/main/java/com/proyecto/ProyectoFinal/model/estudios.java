@@ -17,7 +17,7 @@ import lombok.Setter;
 public class estudios{
     
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nivel;
     private String descripcion;

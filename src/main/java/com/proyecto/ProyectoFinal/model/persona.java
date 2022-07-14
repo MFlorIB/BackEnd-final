@@ -18,7 +18,7 @@ import lombok.Setter;
 public class persona{
     
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nombres;
     private String apellidos;

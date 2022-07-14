@@ -15,7 +15,7 @@ import lombok.Setter;
 @Getter @Setter
 public class usuario {
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
     private String password;
     private String email;
